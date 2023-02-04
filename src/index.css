@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.listLayout {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background: grey;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.listItems {
+  width: 100px;
+  height: 50px;
+  background: #ea3434;
+  text-align: center;
+  border-radius: 15px;
+  padding-top: 1rem;
+  cursor: grab;
+}
+
+.dragStart {
+  cursor: grabbing;
+  background: skyblue;
+  color: skyblue;
+}
